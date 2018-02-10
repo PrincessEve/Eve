@@ -1,0 +1,13 @@
+2018-Feb-10 13:16:06.466157 INFO [daemon] EVE v1.1.1.1()
+2018-Feb-10 13:16:06.466766 INFO [daemon] Module folder: ./eved
+2018-Feb-10 13:16:06.513481 INFO [daemon] Initializing p2p server...
+2018-Feb-10 13:16:06.513884 INFO [node_server] Binding on 0.0.0.0:56555
+2018-Feb-10 13:16:06.514097 INFO [node_server] Net service binded on 0.0.0.0:56555
+2018-Feb-10 13:16:06.514296 INFO [node_server] Attempting to add IGD port mapping.
+2018-Feb-10 13:16:10.865075 INFO [node_server] No IGD was found.
+2018-Feb-10 13:16:10.865293 INFO [daemon] P2p server initialized OK
+2018-Feb-10 13:16:10.865404 INFO [daemon] Initializing core...
+2018-Feb-10 13:16:10.865685 INFO [Blockchain] Blockchain not loaded, generating genesis block.
+2018-Feb-10 13:16:10.918635 INFO [Blockchain] Blockchain initialized. last block: 0, d2047.h1.m16.s10 time ago, current difficulty: 1
+2018-Feb-10 13:16:10.918849 INFO [daemon] Core initialized OK
+2018-Feb-10 13:16:10.918971 INFO [daemon] Starting core rpc server on address 127.0.0.1:56556
