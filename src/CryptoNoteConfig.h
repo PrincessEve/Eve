@@ -24,8 +24,12 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 //TODO Specify total number of available coins
 //TODO ((uint64_t)(-1)) equals to 18,446,744,073,709,551,616 coins
 //TODO or you can define number explicitly UINT64_C(858,986,905,600,000,000)
-const uint64_t MONEY_SUPPLY                                  = (uint64_t)(-1);
-const unsigned EMISSION_SPEED_FACTOR                         = 21;
+//const uint64_t MONEY_SUPPLY                                  = (uint64_t)(-1);
+//const uint64_t MONEY_SUPPLY                                  = UINT64_C(55600700800900); = 0.5xxxxxx
+//const uint64_t MONEY_SUPPLY                                  = UINT64_C(21000000); = 0.00000010
+const uint64_t MONEY_SUPPLY                                  = UINT64_C(50500900000); //0.00024080
+//TODO Try change this ========================================================================================================
+const unsigned EMISSION_SPEED_FACTOR                         = 21; //main 20
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 //TODO Define number of blocks for block size median calculation
@@ -37,9 +41,9 @@ const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 8;
 //TODO Define minimum fee for transactions
 const uint64_t MINIMUM_FEE                                   = 100000;
 const uint64_t DEFAULT_DUST_THRESHOLD                        = MINIMUM_FEE;
-
+//TODO Try change this ========================================================================================================
 //TODO Define preferred block's target time
-const uint64_t DIFFICULTY_TARGET                             = 90; // seconds
+const uint64_t DIFFICULTY_TARGET                             = 120; // seconds //main 120
 const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 24 * 60 * 60 / DIFFICULTY_TARGET;
 //TODO There are options to tune CryptoNote's difficulty retargeting function.
 //TODO We recommend not to change it.
@@ -72,10 +76,10 @@ const char     CRYPTONOTE_BLOCKCHAIN_INDICES_FILENAME[]      = "blockchainindice
 const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json";
 } // parameters
 
-//TODO Put here the name of your currency
+//TODO Put here the name of your currency ==============================================================================================================
 const char     CRYPTONOTE_NAME[]                             = "EVE";
 //const char     GENESIS_COINBASE_TX_HEX[]                     = "";
-const char GENESIS_COINBASE_TX_HEX[] = "013c01ff0001ffffffffffff01029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101da4dea752c0ea1b96cdbbcec95a2f1bbc7c15066400da83999e286901711defa";
+const char GENESIS_COINBASE_TX_HEX[] = "013c01ff000190bc01029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101765fed68a548a5dc58fbb8fe44b68ed7105c29b8068e8ccee1aa4136648cee52";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
@@ -107,9 +111,9 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1
 
 //TODO Add here your network seed nodes
 const std::initializer_list<const char*> SEED_NODES = {
-  //"192.168.56.202:56555"
-  "192.168.56.201:56555"
-  //"your_seed_ip2.com:8080",
+  "159.89.210.54:56555",
+  "174.138.127.123:56555",
+  "seed.maximreview.party:56555"
 };
 
 struct CheckpointData {
