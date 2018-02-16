@@ -114,7 +114,8 @@ bool Currency::getBlockReward(size_t medianSize, size_t currentBlockSize, uint64
 
   emissionChange = penalizedBaseReward - (fee - penalizedFee);
   reward = penalizedBaseReward + penalizedFee;
-
+  //TODO Change this if want premine +++++++++++++++++++++++++++++++++++++
+  //reward = m_moneySupply * 0.1;
   return true;
 }
 

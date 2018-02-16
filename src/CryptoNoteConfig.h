@@ -24,7 +24,7 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 //TODO Specify total number of available coins
 //TODO ((uint64_t)(-1)) equals to 18,446,744,073,709,551,616 coins
 //TODO or you can define number explicitly UINT64_C(858,986,905,600,000,000)
-//const uint64_t MONEY_SUPPLY                                  = (uint64_t)(-1);
+//const uint64_t MONEY_SUPPLY                                  = (uint64_t)(-1); //703679.38874367
 //const uint64_t MONEY_SUPPLY                                  = UINT64_C(55600700800900); = 0.5xxxxxx
 //const uint64_t MONEY_SUPPLY                                  = UINT64_C(21000000); = 0.00000010
 const uint64_t MONEY_SUPPLY                                  = UINT64_C(50500900000); //0.00024080
